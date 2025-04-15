@@ -50,10 +50,11 @@ img {
   flex-direction: column;
   padding: 0.8rem 1rem;
   gap: 1rem;
-  max-height: 28rem;
+  max-height: 30rem;
   width: 17rem;
   background-color: var(--white);
   border-radius: 14px;
+  border: 1px solid black;
   justify-content: space-around;
   box-shadow: 7px 7px black;
 }
@@ -96,7 +97,7 @@ img {
 }
 
 .avatar {
-  height: 42px;
+  height: 36px;
 }
 
 .avatar-name {
@@ -105,6 +106,7 @@ img {
 
 @media screen and (min-width: 1440px) {
   .card {
-    width: 20rem;
+    width: 21rem;
+    height: 30rem;
   }
 }
