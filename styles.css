@@ -48,10 +48,10 @@ img {
 .card {
   display: flex;
   flex-direction: column;
-  padding: 0.8rem 1rem;
-  gap: 1rem;
-  max-height: 30rem;
-  width: 17rem;
+  padding: 24px;
+  gap: 24px;
+  height: 501px;
+  width: 327px;
   background-color: var(--white);
   border-radius: 14px;
   border: 1px solid black;
@@ -59,54 +59,90 @@ img {
   box-shadow: 7px 7px black;
 }
 
+.image-container {
+  height: 200px;
+  overflow: hidden;
+}
+
 .card-img {
   border-radius: 16px;
   margin-bottom: 0.7rem;
-  width: auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card-type {
   font-weight: 700;
   font-size: 0.8rem;
-  padding: 0.3rem 0.8rem;
+  line-height: 150%;
+  padding: 4px 12px;
+  border-radius: 4px;
   background-color: var(--yellow);
   margin-right: auto;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .card-published {
   font-size: 0.8rem;
+  line-height: 150%;
   color: var();
 }
 
 .card h1 {
-  font-size: 1.2rem;
+  font-size: 20px;
+  line-height: 150%;
   font-weight: 800;
 }
 
 .card p {
   font-size: 0.8rem;
-  line-height: 1.3rem;
+  line-height: 150%;
   color: var(--gray-500);
 }
 
-.card div {
+.avatar-container {
   display: flex;
-  gap: 1rem;
+  gap: 12px;
   align-items: center;
   max-height: 1.8rem;
 }
 
 .avatar {
-  height: 36px;
+  height: 32px;
 }
 
 .avatar-name {
   font-weight: 700;
+  font-size: 14px;
 }
 
 @media screen and (min-width: 1440px) {
   .card {
-    width: 21rem;
-    height: 30rem;
+    width: 384px;
+    height: 522px;
+  }
+
+  .card-img {
+    border-radius: 16px;
+    margin-bottom: 0.7rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card h1 {
+    font-size: 1.5rem;
+    line-height: 150%;
+  }
+
+  .card p {
+    font-size: 1rem;
+    line-height: 150%;
   }
 }
